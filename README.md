@@ -47,3 +47,4 @@ amp-generator/
 ├── pyproject.toml                         # The uv packages that need to be deployed before running the project.
 └── README.md                              # Project description document
 ```
+google drive link: https://drive.google.com/drive/folders/1QWwJus5zXt1-xv321l-VGVGF_g5J23xG?usp=sharing
