@@ -4,6 +4,15 @@ A Diffusion-Based Framework for De Novo Antimicrobial Peptide Generation and Mul
 # Abstract
 We propose a two-stage latent diffusion framework coupled with a multidimensional biological cascade screening pipeline for the de novo design of antimicrobial peptides (AMPs). The framework employs a U-Net-based diffusion model to generate peptide candidates in a continuous latent space, followed by a self-trained sequence decoder to reconstruct amino acid sequences of 8–50 residues. To improve biological relevance and candidate quality, we further develop a three-stage screening pipeline that integrates activity and hemolytic-toxicity prediction, sequence-level novelty assessment against natural AMP references, and biological manifold evaluation using the ESM-2 protein language model. The resulting Top-100 candidates exhibit high predicted antimicrobial activity, low hemolytic toxicity, and substantial sequence and structural novelty, demonstrating the potential of the proposed framework for efficient and biologically informed AMP discovery.
 
+## Material and Methods
+Diff-AMP50 is a two-stage latent diffusion framework for de novo antimicrobial peptide (AMP) generation, followed by a three-stage quality-control pipeline.
+
+- Data preparation: AMP sequences were collected from DADP, DBAASP, dbAMP3, APD3, and DRAMP, filtered to 8–50 residues and the 20 standard amino acids, and globally deduplicated. Negative samples were generated using UniProtKB/Swiss-Prot amino acid frequencies and matched length distributions.
+- AMP generation: A U-Net-based Gaussian diffusion model was trained in a continuous latent space, followed by a sequence decoder to generate peptide sequences of 8–50 residues.
+- Quality control: Generated sequences were evaluated using activity and hemolysis random-forest predictors, Levenshtein-distance-based novelty filtering, and ESM-2-based biological manifold scoring. Sequences with predicted hemolysis probability >0.4 or excessive similarity (>80%) to the reference database were removed.
+- Final selection: From 50,000 generated sequences, the Top-100 candidates were selected based on antimicrobial activity, hemolytic toxicity, sequence novelty, and biological plausibility.
+
+
 ## The pipeline
 This experiment has been tested on a 5070ti and a 5060 series graphics card, and the results keep consistent.
 1. Extract the positive samples that meet the requirements from the original dataset, and then generate negative samples that conform to biological properties through a specific algorithm (with modifications)
