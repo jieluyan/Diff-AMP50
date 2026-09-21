@@ -45,10 +45,10 @@ MIT (see LICENSE).
 All the files and their locations when installed should be:
 ```text
 amp-generator/
-├── abp_feature_comparison_results/
+├── amp_feature_comparison_results/
 │   └── models/
 │       ├── hemolysis_classifier.joblib    # Hemolytic toxicity classifier model weights (download from google drive)
-│       └── abp_classifier_aac_dde.joblib  # Antibacterial screening random forest model (download from google drive)
+│       └── amp_classifier_aac_dde.joblib  # Antibacterial screening random forest model (download from google drive)
 ├── checkpoints/
 │   ├── decoder_best.pth                   # Decoder weight file (download from google drive)
     ├── esm2 
