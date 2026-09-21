@@ -15,6 +15,15 @@ This experiment has been tested on a 5070ti and a 5060 series graphics card, and
 7. Download ESM2 to screen for biological rationality
 8. Generate biological sequences that meet the requirements
 
+## Quick start
+
+- Download and install the entire project. Also, download the model files from Google Drive (find the link at the bottom) and place them in the correct location according to the project structure.
+- `uv add requests` (Install all the required packages.)
+-  `uv run generate` (Generate 50,000 sequences and the top 100 ranked sequences, then save them to library.fasta and top.fasta, respectively, in the generate folder.)
+
+## License
+MIT (see LICENSE).
+  
 ## The arguments
 
 - `python == 3.10`
