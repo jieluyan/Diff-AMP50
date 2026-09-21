@@ -4,10 +4,10 @@ and download all the files in the link, put all the files follow the tree below:
 Diff-AMP50
 ├── abp_feature_comparison_results/
 │   └── models/
-│       ├── hemolysis_classifier.joblib    # Hemolytic toxicity classifier model weights (included in the repository)
+│       ├── hemolysis_classifier.joblib    # Hemolytic toxicity classifier model weights (downloaded from google drivey)
 │       └── abp_classifier_aac_dde.joblib  # Antibacterial screening random forest model (downloaded from google drive)
 ├── checkpoints/
-│   ├── decoder_best.pth                   # Decoder weight file (included in the repository)
+│   ├── decoder_best.pth                   # Decoder weight file (downloaded from google drive)
     ├── esm2 
         └──model.safetensors
 │   └── diffusion_amp_diffusion_50len_150ep/
