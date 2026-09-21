@@ -16,11 +16,11 @@ This experiment has been tested on a 5070ti and a 5060 series graphics card, and
 8. Generate biological sequences that meet the requirements
 
 ## The arguments
-python == 3.10
---n-sequences 50000 (set maximum number of generated sequences)
---top-k 100 (extract top k AMP candidates)
---seed 42 (seed)
---length 50 (set maximum length for all the generated sequences, >=50)
+python == 3.10 
+--n-sequences 50000 (set maximum number of generated sequences) 
+--top-k 100 (extract top k AMP candidates) 
+--seed 42 (seed) 
+--length 50 (set maximum length for all the generated sequences, >=50) 
 
 ## The project structure
 All the files and their locations when installed should be:
