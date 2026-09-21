@@ -17,7 +17,7 @@ This experiment has been tested on a 5070ti and a 5060 series graphics card, and
 
 ## The arguments
 python == 3.10
---n-sequences 50000 (set maximum generated sequences number)
+--n-sequences 50000 (set maximum number of generated sequences)
 --top-k 100 (extract top k AMP candidates)
 --seed 42 (seed)
 --length 50 (set maximum length for all the generated sequences, >=50)
@@ -28,14 +28,14 @@ All the files and their locations when installed should be:
 amp-generator/
 ├── acp_feature_comparison_results/
 │   └── models/
-│       ├── hemolysis_classifier.joblib    # Hemolytic toxicity classifier model weights (included in the repository)
-│       └── acp_classifier_aac_dde.joblib  # Antibacterial screening random forest model (downloaded from google drive)
+│       ├── hemolysis_classifier.joblib    # Hemolytic toxicity classifier model weights (download from google drive)
+│       └── acp_classifier_aac_dde.joblib  # Antibacterial screening random forest model (download from google drive)
 ├── checkpoints/
-│   ├── decoder_best.pth                   # Decoder weight file (included in the repository)
+│   ├── decoder_best.pth                   # Decoder weight file (download from google drive)
     ├── esm2 
         └──model.safetensors
 │   └── diffusion_amp_diffusion_50len_150ep/
-│       └── best.pth                       # U-Net diffusion model weights (downloaded from google drive)
+│       └── best.pth                       # U-Net diffusion model weights (download from google drive)
 ├── data/
 │   └── antibacterial.fasta                # Sequence database provided by AMP chanllenge 2027 for checking similarity
 ├── src/
