@@ -29,6 +29,7 @@ This experiment has been tested on a 5070ti and a 5060 series graphics card, and
 - Download and install the entire project. Also, download the model files from Google Drive (find the link at the bottom) and place them in the correct location according to the project structure.
 - `uv add requests` (Install all the required packages.)
 -  `uv run generate` (Generate 50,000 sequences and the top 100 ranked sequences, then save them to library.fasta and top.fasta, respectively, in the generate folder.)
+-  If you encounter RuntimeError: CUDA error: CUBLAS STATUS INVALID VALUE, it may becaused by conflicting CUDA libraries in LD LIBRARY PATH. Run `unsetLD LIBRARY PATH` before starting the program and try again.
 
 ## License
 MIT (see LICENSE).
